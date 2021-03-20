@@ -32,7 +32,12 @@ public class DemoStepDefinitions {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
         OnStage.theActorInTheSpotlight().attemptsTo(RegisterForm.the(proyectoData.get(0).getStrName(),
-                proyectoData.get(0).getStrLastName()));
+                proyectoData.get(0).getStrLastName(),proyectoData.get(0).getStrAddress(),
+                proyectoData.get(0).getStrEmail(),proyectoData.get(0).getStrPhone(),
+                proyectoData.get(0).getStrGander(),proyectoData.get(0).getStrHobbie(),
+                proyectoData.get(0).getStrLanguages()
+
+        ));
     }
 
     @Then("^he finds$")

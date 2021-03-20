@@ -1,54 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Demo Automation" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-20T03:28:50" hostname="DESKTOP-CURJO95" time="12.51">
+<testsuite name="Demo Automation" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-20T14:35:10" hostname="DESKTOP-CURJO95" time="30.742">
   <properties/>
-  <testcase name="Registration in demo automation" classname="Demo Automation" time="12.51"/>
+  <testcase name="Registration in demo automation" classname="Demo Automation" time="30.742"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6fbf6cd7
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3de0ac3b
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@676a0646
-mar 19, 2021 10:28:51 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7b036b37
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@736ce63e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3c1984f2
+mar 20, 2021 9:35:11 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized;--test-ty..., goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors..., --disable-popup-blocking, --disable-default-apps, --disable-extensions-file-a..., --incognito, --disable-infobars, --disable-gpu], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 8519
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 43361
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1616210935.036][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
-mar 19, 2021 10:28:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1616250916.427][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+mar 20, 2021 9:35:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@70aa6dd2
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1c42fe6b
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@58db0f27
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2cb1913e
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7b53334c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7e7e9f66
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
-| strName | strLastName |
-| andres | Rojas | [Andres register form [Andres enters 'andres' into Nombre]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@342dfc6
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@61d906c6
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
-| strName | strLastName |
-| andres | Rojas | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido]]
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4682d992
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
-| strName | strLastName |
-| andres | Rojas | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido]]
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@143bf555
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
-| strName | strLastName |
-| andres | Rojas | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@41d0b2d9
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@71ce5c3e
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
-| strName | strLastName |
-| andres | Rojas | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido]], Then he finds
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7401e4a5
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male']]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@20894eff
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male'], Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Cricket']]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1ae1306c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male'], Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Cricket'], Andres clicks on //div[@class='ui-autocomplete-multiselect ui-state-default ui-widget']]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1d310b0f
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male'], Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Cricket'], Andres clicks on //div[@class='ui-autocomplete-multiselect ui-state-default ui-widget'], Andres clicks on //a[contains(text(),'English')]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male'], Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Cricket'], Andres clicks on //div[@class='ui-autocomplete-multiselect ui-state-default ui-widget'], Andres clicks on //a[contains(text(),'English')]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male'], Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Cricket'], Andres clicks on //div[@class='ui-autocomplete-multiselect ui-state-default ui-widget'], Andres clicks on //a[contains(text(),'English')]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@640bba40
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male'], Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Cricket'], Andres clicks on //div[@class='ui-autocomplete-multiselect ui-state-default ui-widget'], Andres clicks on //a[contains(text(),'English')]]], Then he finds
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
-| strName | strLastName |
-| andres | Rojas | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido]], Then he finds
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male'], Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Cricket'], Andres clicks on //div[@class='ui-autocomplete-multiselect ui-state-default ui-widget'], Andres clicks on //a[contains(text(),'English')]]], Then he finds
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
-| strName | strLastName |
-| andres | Rojas | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido]], Then he finds]
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male'], Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Cricket'], Andres clicks on //div[@class='ui-autocomplete-multiselect ui-state-default ui-widget'], Andres clicks on //a[contains(text(),'English')]]], Then he finds]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Registration in demo automation:Given andres wants to register in demo automation [Andres open up [Andres opens the Demo page]], When he fills out the form
-| strName | strLastName |
-| andres | Rojas | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido]], Then he finds]
+| strName | strLastName | strAddress | strEmail | strPhone | strGander | strHobbie | strLanguages |
+| andres | Rojas | Cra 52 # 14 30 | andres@gmail.com | 3131235121 | Male | Cricket | English | [Andres register form [Andres enters 'andres' into Nombre, Andres enters 'Rojas' into Apellido, Andres enters 'Cra 52 # 14 30' into DIRECCION, Andres enters 'andres@gmail.com' into CORREO, Andres enters '3131235121' into CORREO, Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male'], Andres clicks on //div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Cricket'], Andres clicks on //div[@class='ui-autocomplete-multiselect ui-state-default ui-widget'], Andres clicks on //a[contains(text(),'English')]]], Then he finds]
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
