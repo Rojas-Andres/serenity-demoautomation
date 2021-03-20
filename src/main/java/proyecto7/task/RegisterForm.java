@@ -75,13 +75,20 @@ public class RegisterForm implements Task {
                 SelectFromOptions.byValue(strMonth).from(RegisterPage.MONTH),
                 SelectFromOptions.byValue(strDay).from(RegisterPage.DAY),
                 Enter.theValue(strPassword).into(RegisterPage.FIRSTPASSWORD),
-                Enter.theValue(strPassword).into(RegisterPage.SECONDPASSWORD)
+                Enter.theValue(strPassword).into(RegisterPage.SECONDPASSWORD),
+                Click.on(RegisterPage.SUBMIT),
+                Click.on(RegisterPage.CLICK_WEB_TABLE)
+
+                //,Click.on(RegisterPage.QUIT)
 
 
 
 
 
 
-        );
+
+
+
+                );
     }
 }

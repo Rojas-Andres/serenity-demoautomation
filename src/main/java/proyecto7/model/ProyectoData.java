@@ -16,6 +16,15 @@ public class ProyectoData {
     private String strMonth;
     private String strDay;
     private String strPassword;
+    private String strComponent;
+
+    public String getStrComponent() {
+        return strComponent;
+    }
+
+    public void setStrComponent(String strComponent) {
+        this.strComponent = strComponent;
+    }
 
     public String getStrPassword() {
         return strPassword;

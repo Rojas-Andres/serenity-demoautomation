@@ -7,9 +7,11 @@ import java.util.List;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import proyecto7.model.ProyectoData;
+import proyecto7.questions.Answer;
 import proyecto7.task.OpenUp;
 import proyecto7.task.RegisterForm;
 
@@ -43,10 +45,11 @@ public class DemoStepDefinitions {
         ));
     }
 
-    @Then("^he finds$")
-    public void heFinds() {
+    @Then("^he checks the component$")
+    public void heChecksTheComponent(List<ProyectoData> proyectoData) {
         // Write code here that turns the phrase above into concrete actions
-        //throw new PendingException();
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(proyectoData.get(0).getStrComponent())));
+
     }
 
 }

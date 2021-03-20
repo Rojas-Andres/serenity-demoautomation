@@ -31,5 +31,15 @@ public class RegisterPage {
 
     //$x("//input[@id='secondpassword']")
     public static final Target SECONDPASSWORD = Target.the("Segunda Contraseña").located(By.xpath(("//input[@id='secondpassword']")));
+    //$x("//button[@id='submitbtn']")
+    public static final Target SUBMIT = Target.the("Click en enviar").located(By.xpath(("//button[@id='submitbtn']")));
+    //$x("//a[contains(text(),'WebTable')]")
+    public static final Target CLICK_WEB_TABLE = Target.the("Click en WEBTABLE").located(By.xpath(("//a[contains(text(),'WebTable')]")));
+    //$x("//div[@id='dismiss-button']")
+    //public static final Target QUIT = Target.the("Quitar Publicidad").located(By.xpath(("//span[@class='ns-lzfq1-e-14']")));
+
+    //$x("//h4[contains(text(),'- Double Click on Edit Icon to')]")
+
+    public static final Target C_TEXT = Target.the("Question").located(By.xpath(("//h4[contains(text(),'- Double Click on Edit Icon to')]")));
 
 }
