@@ -9,6 +9,33 @@ public class ProyectoData {
     private String strGander;
     private String strHobbie;
     private String strLanguages;
+    private String strSkill;
+    private String strCountry;
+    private String strSelectCountry;
+
+    public String getStrSelectCountry() {
+        return strSelectCountry;
+    }
+
+    public void setStrSelectCountry(String strSelectCountry) {
+        this.strSelectCountry = strSelectCountry;
+    }
+
+    public String getStrCountry() {
+        return strCountry;
+    }
+
+    public void setStrCountry(String strCountry) {
+        this.strCountry = strCountry;
+    }
+
+    public String getStrSkill() {
+        return strSkill;
+    }
+
+    public void setStrSkill(String strSkill) {
+        this.strSkill = strSkill;
+    }
 
     public String getStrLanguages() {
         return strLanguages;

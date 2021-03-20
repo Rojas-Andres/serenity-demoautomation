@@ -5,7 +5,9 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
+import org.openqa.selenium.Keys;
 import proyecto7.userinterface.RegisterPage;
 
 public class RegisterForm implements Task {
@@ -17,7 +19,10 @@ public class RegisterForm implements Task {
     private String strGander;
     private String strHobbie;
     private String strLanguages;
-    public RegisterForm(String strName,String strLastName,String strAddress,String strEmail,String strPhone,String strGander,String strHobbie,String strLanguages) {
+    private String strSkill;
+    private String strCountry;
+    private String strSelectCountry;
+    public RegisterForm(String strName,String strLastName,String strAddress,String strEmail,String strPhone,String strGander,String strHobbie,String strLanguages, String strSkill,String strCountry,String strSelectCountry) {
         this.strName = strName;
         this.strLastName = strLastName;
         this.strAddress = strAddress;
@@ -26,10 +31,13 @@ public class RegisterForm implements Task {
         this.strGander = strGander;
         this.strHobbie = strHobbie;
         this.strLanguages = strLanguages;
+        this.strSkill = strSkill;
+        this.strCountry = strCountry;
+        this.strSelectCountry=strSelectCountry;
     }
 
-    public static RegisterForm the(String strName, String strLastName, String strAddress, String strEmail, String strPhone,String strGander,String strHobbie,String strLanguages) {
-        return Tasks.instrumented(RegisterForm.class, strName,strLastName,strAddress,strEmail,strPhone,strGander,strHobbie,strLanguages);
+    public static RegisterForm the(String strName, String strLastName, String strAddress, String strEmail, String strPhone,String strGander,String strHobbie,String strLanguages,String strSkill,String strCountry,String strSelectCountry) {
+        return Tasks.instrumented(RegisterForm.class, strName,strLastName,strAddress,strEmail,strPhone,strGander,strHobbie,strLanguages,strSkill,strCountry,strSelectCountry);
     }
 
     @Override
@@ -45,9 +53,15 @@ public class RegisterForm implements Task {
                 Click.on("//div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='"+strHobbie+"']"),
                 //$x("//div[@class='ui-autocomplete-multiselect ui-state-default ui-widget']")
                 Click.on("//div[@class='ui-autocomplete-multiselect ui-state-default ui-widget']"),
-                Click.on("//a[contains(text(),'"+strLanguages+"')]")
+                Click.on("//a[contains(text(),'"+strLanguages+"')]"),
                 //$x("//a[contains(text(),'Arabic')]")
-
+                SelectFromOptions.byValue(strSkill).from(RegisterPage.SKILL),
+                SelectFromOptions.byValue(strCountry).from(RegisterPage.COUNTRIES),
+                Click.on("//span[@class='select2-selection select2-selection--single']"),
+                //$x("//input[@class='select2-search__field']")
+                Enter.theValue(strSelectCountry).into("//input[@class='select2-search__field']"),
+                Hit.the(Keys.DOWN).into("//input[@class='select2-search__field']"),
+                Hit.the(Keys.ENTER).into("//input[@class='select2-search__field']")
         );
     }
 }

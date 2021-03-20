@@ -1,10 +1,10 @@
-proyecto7/userinterface/RegisterPage.java
- proyecto7.userinterface.RegisterPage
+proyecto7/model/ProyectoData.java
+ proyecto7.model.ProyectoData
 proyecto7/userinterface/DemoPage.java
  proyecto7.userinterface.DemoPage
 proyecto7/task/OpenUp.java
  proyecto7.task.OpenUp
-proyecto7/model/ProyectoData.java
- proyecto7.model.ProyectoData
 proyecto7/task/RegisterForm.java
  proyecto7.task.RegisterForm
+proyecto7/userinterface/RegisterPage.java
+ proyecto7.userinterface.RegisterPage

@@ -16,4 +16,12 @@ public class RegisterPage {
     //$x("//div[@class='col-md-4 col-xs-4 col-sm-4']//input[@value='Male']")
     public static final Target GENDER = Target.the("Sexo").located(By.xpath("//div[@class='col-md-4 col-xs-4 col-sm-4']//input[@ng-model='Phone']"));
 
+    //$x("//select[@id='Skills']")
+    public static final Target SKILL = Target.the("Habilidad").located(By.xpath(("//select[@id='Skills']")));
+    //$x("//select[@id='countries']")
+    public static final Target COUNTRIES = Target.the("Pais").located(By.xpath(("//select[@id='countries']")));
+
+    //$x("//select[@id='yearbox']")
+
+
 }
