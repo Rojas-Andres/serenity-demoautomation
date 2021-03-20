@@ -20,8 +20,10 @@ public class RegisterPage {
     public static final Target SKILL = Target.the("Habilidad").located(By.xpath(("//select[@id='Skills']")));
     //$x("//select[@id='countries']")
     public static final Target COUNTRIES = Target.the("Pais").located(By.xpath(("//select[@id='countries']")));
-
-    //$x("//select[@id='yearbox']")
-
+    public static final Target YEAR = Target.the("Año de nacimiento").located(By.xpath(("//select[@id='yearbox']")));
+    //$x("//select[@ng-model='monthbox']")
+    public static final Target MONTH = Target.the("Mes de nacimiento").located(By.xpath(("//select[@ng-model='monthbox']")));
+    //$x("//select[@id='daybox']")
+    public static final Target DAY = Target.the("Dia de nacimiento").located(By.xpath(("//select[@id='daybox']")));
 
 }

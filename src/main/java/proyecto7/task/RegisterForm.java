@@ -61,7 +61,15 @@ public class RegisterForm implements Task {
                 //$x("//input[@class='select2-search__field']")
                 Enter.theValue(strSelectCountry).into("//input[@class='select2-search__field']"),
                 Hit.the(Keys.DOWN).into("//input[@class='select2-search__field']"),
-                Hit.the(Keys.ENTER).into("//input[@class='select2-search__field']")
+                Hit.the(Keys.ENTER).into("//input[@class='select2-search__field']"),
+                //$x("//select[@id='yearbox']")
+                SelectFromOptions.byValue("2000").from(RegisterPage.YEAR),
+                SelectFromOptions.byValue("April").from(RegisterPage.MONTH),
+                SelectFromOptions.byValue("20").from(RegisterPage.DAY)
+
+
+
+
         );
     }
 }

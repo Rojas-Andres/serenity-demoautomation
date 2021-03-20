@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="proyecto7.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-CURJO95" time="0.0">
   <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@6db38618
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@4bbb6d1a
 
 1 Scenarios (?[32m1 passed?[0m)
 3 Steps (?[32m3 passed?[0m)
-0m25,042s
+0m23,194s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -37,6 +37,6 @@
 
 TEST STARTED: Registration in demo automation
 -------------------------------------------------------------------(demo-automation;registration-in-demo-automation)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@35b5964b
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@786031eb
 ]]></system-err>
 </testsuite>

@@ -9,5 +9,5 @@ Feature: Demo Automation
     Then he finds
 
     Examples:
-    | strName | strLastName | strAddress      | strEmail         |  strPhone   | strGander | strHobbie | strLanguages | strSkill | strCountry | strSelectCountry |
-    | andres  | Rojas       | Cra 52 # 14 30  | andres@gmail.com |  3131235121 | Male      |  Cricket  | English      | Android  | Colombia   | Austria          |
+    | strName | strLastName | strAddress      | strEmail         |  strPhone   | strGander | strHobbie | strLanguages | strSkill | strCountry | strSelectCountry   |
+    | andres  | Rojas       | Cra 52 # 14 30  | andres@gmail.com |  3131235121 | Male      |  Cricket  | English      | Android  | Colombia   | Australia          |
