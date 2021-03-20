@@ -1,2 +1,4 @@
 proyecto7/runners/RunnerTags.java
  proyecto7.runners.RunnerTags
+proyecto7/stepdefinitions/DemoStepDefinitions.java
+ proyecto7.stepdefinitions.DemoStepDefinitions
