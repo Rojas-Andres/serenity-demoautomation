@@ -15,6 +15,15 @@ public class ProyectoData {
     private String strYear;
     private String strMonth;
     private String strDay;
+    private String strPassword;
+
+    public String getStrPassword() {
+        return strPassword;
+    }
+
+    public void setStrPassword(String strPassword) {
+        this.strPassword = strPassword;
+    }
 
     public String getStrYear() {
         return strYear;

@@ -25,7 +25,8 @@ public class RegisterForm implements Task {
     private String strYear;
     private String strMonth;
     private String strDay;
-    public RegisterForm(String strName,String strLastName,String strAddress,String strEmail,String strPhone,String strGander,String strHobbie,String strLanguages, String strSkill,String strCountry,String strSelectCountry, String strYear,String strMonth ,String strDay) {
+    private String strPassword;
+    public RegisterForm(String strName,String strLastName,String strAddress,String strEmail,String strPhone,String strGander,String strHobbie,String strLanguages, String strSkill,String strCountry,String strSelectCountry, String strYear,String strMonth ,String strDay,String strPassword) {
         this.strName = strName;
         this.strLastName = strLastName;
         this.strAddress = strAddress;
@@ -40,10 +41,11 @@ public class RegisterForm implements Task {
         this.strYear = strYear;
         this.strMonth= strMonth;
         this.strDay = strDay;
+        this.strPassword = strPassword;
     }
 
-    public static RegisterForm the(String strName, String strLastName, String strAddress, String strEmail, String strPhone,String strGander,String strHobbie,String strLanguages,String strSkill,String strCountry,String strSelectCountry,String strYear,String strMonth ,String strDay) {
-        return Tasks.instrumented(RegisterForm.class, strName,strLastName,strAddress,strEmail,strPhone,strGander,strHobbie,strLanguages,strSkill,strCountry,strSelectCountry,strYear,strMonth,strDay);
+    public static RegisterForm the(String strName, String strLastName, String strAddress, String strEmail, String strPhone,String strGander,String strHobbie,String strLanguages,String strSkill,String strCountry,String strSelectCountry,String strYear,String strMonth ,String strDay,String strPassword) {
+        return Tasks.instrumented(RegisterForm.class, strName,strLastName,strAddress,strEmail,strPhone,strGander,strHobbie,strLanguages,strSkill,strCountry,strSelectCountry,strYear,strMonth,strDay,strPassword);
     }
 
     @Override
@@ -72,8 +74,8 @@ public class RegisterForm implements Task {
                 SelectFromOptions.byValue(strYear).from(RegisterPage.YEAR),
                 SelectFromOptions.byValue(strMonth).from(RegisterPage.MONTH),
                 SelectFromOptions.byValue(strDay).from(RegisterPage.DAY),
-                Enter.theValue("i^zK76BlHdd*").into(RegisterPage.FIRSTPASSWORD),
-                Enter.theValue("i^zK76BlHdd*").into(RegisterPage.SECONDPASSWORD)
+                Enter.theValue(strPassword).into(RegisterPage.FIRSTPASSWORD),
+                Enter.theValue(strPassword).into(RegisterPage.SECONDPASSWORD)
 
 
 
