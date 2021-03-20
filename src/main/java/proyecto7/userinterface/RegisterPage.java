@@ -26,4 +26,10 @@ public class RegisterPage {
     //$x("//select[@id='daybox']")
     public static final Target DAY = Target.the("Dia de nacimiento").located(By.xpath(("//select[@id='daybox']")));
 
+    //$x("//input[@id='firstpassword']")
+    public static final Target FIRSTPASSWORD = Target.the("Primera Contraseña").located(By.xpath(("//input[@id='firstpassword']")));
+
+    //$x("//input[@id='secondpassword']")
+    public static final Target SECONDPASSWORD = Target.the("Segunda Contraseña").located(By.xpath(("//input[@id='secondpassword']")));
+
 }

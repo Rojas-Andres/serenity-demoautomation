@@ -71,7 +71,11 @@ public class RegisterForm implements Task {
                 //$x("//select[@id='yearbox']")
                 SelectFromOptions.byValue(strYear).from(RegisterPage.YEAR),
                 SelectFromOptions.byValue(strMonth).from(RegisterPage.MONTH),
-                SelectFromOptions.byValue(strDay).from(RegisterPage.DAY)
+                SelectFromOptions.byValue(strDay).from(RegisterPage.DAY),
+                Enter.theValue("i^zK76BlHdd*").into(RegisterPage.FIRSTPASSWORD),
+                Enter.theValue("i^zK76BlHdd*").into(RegisterPage.SECONDPASSWORD)
+
+
 
 
 
