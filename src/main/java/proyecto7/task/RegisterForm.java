@@ -22,7 +22,10 @@ public class RegisterForm implements Task {
     private String strSkill;
     private String strCountry;
     private String strSelectCountry;
-    public RegisterForm(String strName,String strLastName,String strAddress,String strEmail,String strPhone,String strGander,String strHobbie,String strLanguages, String strSkill,String strCountry,String strSelectCountry) {
+    private String strYear;
+    private String strMonth;
+    private String strDay;
+    public RegisterForm(String strName,String strLastName,String strAddress,String strEmail,String strPhone,String strGander,String strHobbie,String strLanguages, String strSkill,String strCountry,String strSelectCountry, String strYear,String strMonth ,String strDay) {
         this.strName = strName;
         this.strLastName = strLastName;
         this.strAddress = strAddress;
@@ -34,10 +37,13 @@ public class RegisterForm implements Task {
         this.strSkill = strSkill;
         this.strCountry = strCountry;
         this.strSelectCountry=strSelectCountry;
+        this.strYear = strYear;
+        this.strMonth= strMonth;
+        this.strDay = strDay;
     }
 
-    public static RegisterForm the(String strName, String strLastName, String strAddress, String strEmail, String strPhone,String strGander,String strHobbie,String strLanguages,String strSkill,String strCountry,String strSelectCountry) {
-        return Tasks.instrumented(RegisterForm.class, strName,strLastName,strAddress,strEmail,strPhone,strGander,strHobbie,strLanguages,strSkill,strCountry,strSelectCountry);
+    public static RegisterForm the(String strName, String strLastName, String strAddress, String strEmail, String strPhone,String strGander,String strHobbie,String strLanguages,String strSkill,String strCountry,String strSelectCountry,String strYear,String strMonth ,String strDay) {
+        return Tasks.instrumented(RegisterForm.class, strName,strLastName,strAddress,strEmail,strPhone,strGander,strHobbie,strLanguages,strSkill,strCountry,strSelectCountry,strYear,strMonth,strDay);
     }
 
     @Override
@@ -63,9 +69,9 @@ public class RegisterForm implements Task {
                 Hit.the(Keys.DOWN).into("//input[@class='select2-search__field']"),
                 Hit.the(Keys.ENTER).into("//input[@class='select2-search__field']"),
                 //$x("//select[@id='yearbox']")
-                SelectFromOptions.byValue("2000").from(RegisterPage.YEAR),
-                SelectFromOptions.byValue("April").from(RegisterPage.MONTH),
-                SelectFromOptions.byValue("20").from(RegisterPage.DAY)
+                SelectFromOptions.byValue(strYear).from(RegisterPage.YEAR),
+                SelectFromOptions.byValue(strMonth).from(RegisterPage.MONTH),
+                SelectFromOptions.byValue(strDay).from(RegisterPage.DAY)
 
 
 

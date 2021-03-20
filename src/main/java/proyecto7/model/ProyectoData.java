@@ -12,6 +12,33 @@ public class ProyectoData {
     private String strSkill;
     private String strCountry;
     private String strSelectCountry;
+    private String strYear;
+    private String strMonth;
+    private String strDay;
+
+    public String getStrYear() {
+        return strYear;
+    }
+
+    public void setStrYear(String strYear) {
+        this.strYear = strYear;
+    }
+
+    public String getStrMonth() {
+        return strMonth;
+    }
+
+    public void setStrMonth(String strMonth) {
+        this.strMonth = strMonth;
+    }
+
+    public String getStrDay() {
+        return strDay;
+    }
+
+    public void setStrDay(String strDay) {
+        this.strDay = strDay;
+    }
 
     public String getStrSelectCountry() {
         return strSelectCountry;

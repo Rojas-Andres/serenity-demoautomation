@@ -36,7 +36,9 @@ public class DemoStepDefinitions {
                 proyectoData.get(0).getStrEmail(),proyectoData.get(0).getStrPhone(),
                 proyectoData.get(0).getStrGander(),proyectoData.get(0).getStrHobbie(),
                 proyectoData.get(0).getStrLanguages(),proyectoData.get(0).getStrSkill(),
-                proyectoData.get(0).getStrCountry(),proyectoData.get(0).getStrSelectCountry()
+                proyectoData.get(0).getStrCountry(),proyectoData.get(0).getStrSelectCountry(),
+                proyectoData.get(0).getStrYear(),proyectoData.get(0).getStrMonth(),
+                proyectoData.get(0).getStrDay()
 
         ));
     }
